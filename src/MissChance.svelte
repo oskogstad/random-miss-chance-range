@@ -92,7 +92,7 @@
         
         <div class='button-wrapper'>
             <button on:click={() => removeItem(id)}>Delete</button>
-            <button on:click={onRegenerateClick}>Regenerate</button>
+            <button on:click={onRegenerateClick}>Randomize</button>
         </div>
     </div>
 </div>
