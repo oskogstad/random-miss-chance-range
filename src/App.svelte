@@ -4,7 +4,9 @@
 	import Modal from './Modal.svelte';
 	let modal;
 </script>
-
+<svelte:head>
+	<title>Random miss chance</title>
+</svelte:head>
 <main>
 	<h1>Random miss chance</h1>
 	<p>Miss chance range generator</p>
