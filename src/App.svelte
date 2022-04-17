@@ -55,12 +55,15 @@
 
 	main > p {
 		color: var(--light-3);
+		padding:0;
+		margin:0;
+		margin-bottom: 0.5em;
 	}
 
 	h1 {
 		color: var(--light-1);
 		text-transform: uppercase;
-		font-size: 2em;
+		font-size: 1.75em;
 		font-weight: 200;
 	}
 

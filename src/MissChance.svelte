@@ -66,12 +66,12 @@
     {/if}
     <div class='miss-chance-content'>
         <div class='name-check-wrapper'>
-            <h1>{name}</h1>
+            <h2>{name}</h2>
             <label class="check-wrapper">Rolled:
                 <input on:keyup={onRollInput} class="check-input" type="text" bind:value={rolledNumberInput} />
             </label>
         </div>
-        <h2 class='roll-result'>{rollResultText}</h2>
+        <h3 class='roll-result'>{rollResultText}</h3>
 
         <label for='success-numbers'>Success:</label>
         <ul id='success-numbers'>
@@ -98,6 +98,9 @@
 </div>
 
 <style>
+    h2 { 
+        font-size: 1em;
+    }
     ul {
         list-style-type: none;
         margin: 0;
@@ -105,29 +108,26 @@
 
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5em;
+        gap: 0.23em;
     }
 
     li { 
-        font-size: 0.7em;
-        padding: 0.25em;
+        font-size: 0.65em;
+        padding: 0.05em;
         min-width: 1.5625em;
-        border: 1px solid transparent;
     }
 
     .marked-li-success {
-        border: 1px solid green;
         background-color: green;
     }
 
     .marked-li-fail {
-        border: 1px solid red;
         background-color: red;
     }
 
     .roll-result {
         margin:0 auto;
-        line-height: 1.5em;
+        line-height: 1em;
     }
 
     .check-wrapper {
@@ -156,14 +156,14 @@
     .miss-chance-content {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 0.5em;
     }
 
     .miss-chance {
         background-color: var(--medium-1);
         color: var(--light-3);
         position: relative;
-        padding: 1em;
+        padding: 0.5em 1em;
         max-width: 27em;
         width: 80%;
         box-shadow: 0 0 15px rgba(0,0,0,.1);
