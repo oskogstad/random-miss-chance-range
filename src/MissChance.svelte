@@ -57,6 +57,7 @@
 
         rolledNumberInput = "";
         rollResultText = waitingText;
+        window.location = window.location;
     }
 </script>
 
