@@ -4,9 +4,9 @@ import MissChance from './MissChance.svelte';
 export const missChanceItems = writable([]);
 
 export const addItem = (newItem) => {
-    missChanceItems.update(existinItems => [
+    missChanceItems.update(existingItems => [
         newItem,
-        ...existinItems
+        ...existingItems
     ]);
     window.location = window.location;
 }
