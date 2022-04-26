@@ -30,13 +30,13 @@
 
         const parsedRoll = parseInt(+rolledNumberInput);
         if(Number.isInteger(parsedRoll)) {
-            if(numbers.success.includes(parsedRoll)) {
+            if(success.includes(parsedRoll)) {
                 if(parsedRoll == 69 && gcpRule)
                     rollResultText = `69! Best result! ${remoji.get69Emoji()}`;
                 else 
                     rollResultText = `${parsedRoll} is a hit! ${remoji.getHitEmoji()}`;
             }
-            else if(numbers.fails.includes(parsedRoll))
+            else if(fails.includes(parsedRoll))
                 if(parsedRoll == 86 && gcpRule)
                     rollResultText = `86! Worst result! ${remoji.get86Emoji()}`;
                 else
@@ -57,7 +57,6 @@
 
         rolledNumberInput = "";
         rollResultText = waitingText;
-        window.location = window.location;
     }
 </script>
 
